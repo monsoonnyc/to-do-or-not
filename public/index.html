@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do or Not</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>To Do <br>___Or Not</h1>
+
+    <!-- Search Input -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search" />
+        <span id="clearSearch" class="clear-icon" style="display:none;">&times;</span>
+    </div>
+
+    <!-- Input for adding tasks -->
+    <div class="input-container">
+        <textarea type="text" id="taskInput" placeholder="Add a new task..." /></textarea>
+        <button id="addButton">+</button>
+    </div>
+
+    <!-- Task List (Grid-style) -->
+    <div class="card-container" id="taskList">
+        <!-- Task items will be dynamically added here -->
+    </div>
+</div>
+
+<footer>
+    <p>To-Do List - Built with MongoDB, OpenAI, and Node.js</p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
