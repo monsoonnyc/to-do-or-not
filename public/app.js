@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Add .5s delay before performing the search after the user stops typing
         debounceTimeout = setTimeout(async () => {
-            const response = await fetch(`/search?query=${encodeURIComponent(query)}`);
+            const response = await fetch(`${API_URL}/search?query=${encodeURIComponent(query)}`);
             if (!response.ok) {
                 console.error("Search error:", response.statusText);
                 return;
