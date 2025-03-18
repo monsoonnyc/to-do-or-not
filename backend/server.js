@@ -105,7 +105,7 @@ app.listen(PORT, () => {
 });
 
 //Search notes
-app.get('/search', async (req, res) => {
+app.get('/api/todos/search', async (req, res) => {
     const { query } = req.query;
 
     try {
