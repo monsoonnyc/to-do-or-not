@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:3000/api/todos';
+const API_URL = 'https://to-do-or-not.onrender.com/api/todos';
 
 document.addEventListener("DOMContentLoaded", () => {
     const addButton = document.getElementById("addButton");
